@@ -1,0 +1,125 @@
+// Actividad 1 (Realizar nuestro primer Hello World en DartPad):
+
+void main() {
+
+  print('hola mundo');
+
+}
+
+
+// Actividad 2 (Utilizar tipo de datos ya sean numeros y strings):
+
+void main() {
+  String mensaje1 = "Hola mundo";
+
+  var mensaje2 = "¡Hola a todos!";
+
+  final String mensaje3 = "¡Saludos!";
+
+  print(mensaje1);
+  print(mensaje2);
+  print(mensaje3);
+
+}
+
+-------------------------------------------------------
+
+void main() {
+  
+  int numeroEntero = 42;
+  double numeroDecimal = 3.14;
+
+  print(numeroEntero);
+  print(numeroDecimal);
+
+}
+
+
+// Actividad 3(Utilizar listas y mapas en Dart):
+
+void main() {
+  List<int> numeros = [1, 2, 3, 4, 5];
+
+  List<String> colores = ['rojo', 'verde', 'azul'];
+
+  print("Este es el primer elemento de la lista 'numeros': ${numeros[0]}");
+
+  print("Este es el segundo elemento de la lista 'colores': ${colores[1]}");
+
+  numeros.add(6);
+  colores.add('amarillo');
+
+  print("Elementos de la lista 'numeros':");
+  for (int numero in numeros) {
+    print(numero);
+  }
+
+  print("Elementos de la lista 'colores':");
+  for (String color in colores) {
+    print(color);
+  }
+}
+
+-------------------------------------------------------
+
+void main() {
+  Map<String, dynamic> persona = {
+    'nombre': 'Juan',
+    'edad': 30,
+    'ciudad': 'Madrid'
+  };
+
+  print("Nombre: ${persona['nombre']}");
+
+  print("Edad: ${persona['edad']}");
+
+  persona['edad'] = 35;
+
+  persona['profesion'] = 'ingeniero';
+
+  print("Información de la persona:");
+  persona.forEach((clave, valor) {
+    print("$clave: $valor");
+  });
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+void main() {
+  
+  String nombre1= 'Harold';
+  var nombre2 = 'Cutti';
+  
+  String saludo='Hola, $nombre1';
+  String despedida = 'Adios, ' + nombre2;
+  
+  print(saludo);
+  print(despedida);
+  
+  int edad= 18;
+  double altura = 1.76;  
+  
+  String anos='Edad: $edad';
+  String medido = 'Altura:  $altura';
+  
+  print(anos);
+  print(medido);
+}
